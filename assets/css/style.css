@@ -16,24 +16,27 @@
 }
 #menu li a{
     text-decoration:none;
-    color:blue;
+    color:red;
     font-size: 20px;
 
 }
 #menu li a:hover {
-    color:red;
+    color:rebeccapurple;
 }
 .p-30{
     padding: 30px;
-    color: blue;
+    color:grey;
 }
 .br-50{
     border-radius: 50%;
 }
 .h1{
-    color: royalblue;
+    color: red;
 }
 .pag{
     background-color:black;
+}
+.color{
+    color: gray;
 }
 /* Estilo da contato.html*/
