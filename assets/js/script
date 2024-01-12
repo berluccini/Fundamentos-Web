@@ -35,8 +35,8 @@ function validaNome() {
 
     function validaAssunto(){
         let txtAssunto = document.querySelector('#txtAssunto')
-        if(assunto.value.length >= 100){
-            txtAssunto.innerHTML ='<h1> Texto é muito grande, digite no máximo 100 caracteres</h1>'
+        if(assunto.value.length > 100){
+            txtAssunto.innerHTML ='<h2> Texto é muito grande, digite no máximo 100 caracteres</h2>'
             txtAssunto.style.color= 'red'
             txtAssunto.style.display = 'block'
         }else{
