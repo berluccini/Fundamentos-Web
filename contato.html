@@ -22,25 +22,31 @@
     <h1 class="center h1">Entre em Contato Comigo</h1>
     <form>
         <label class="color"  for="nome">Nome:</label><br>
-        <input type="text" id="nome">
-<br>
+        <input type="text" id="nome" onkeyup="validaNome()">
+        <div id="txtNome"></div>
+        <br>
         <label class="color" for="email">Email:</label><br>
-        <input type="email" id="email">
-<br>
+        <input type="email" id="email" onkeyup="validaEmail()">
+        <div id="txtEmail"></div>
+        <br>
         <label class="color" for="assunto">Assunto:</label><br>
         <textarea name="assunto" id="assunto"
-        cols="60" rows="5"></textarea>
-       <br>
+        cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+        <div id="txtAssunto"></div>
+        <br>
        <br>
        
 
-        <button class="color">Enviar</button>
+        <button class="color" onclick="enviar()">Enviar</button>
     
     </form>
     <h2 class="color">Endereço:
     </h2>
     <p class="color">Av. Pires do Rio, 4000 </p>
     <p class="color">São Paulo - SP</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.098764502351!2d-46.4508281!3d-23.528949899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce66b1a5c6f817%3A0xb08f515992031eb!2sAv.%20Pires%20do%20Rio%2C%204000%20-%20Jardim%20Norma%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008240-005!5e0!3m2!1spt-BR!2sbr!4v1704727927247!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.098764502351!2d-46.4508281!3d-23.528949899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce66b1a5c6f817%3A0xb08f515992031eb!2sAv.%20Pires%20do%20Rio%2C%204000%20-%20Jardim%20Norma%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008240-005!5e0!3m2!1spt-BR!2sbr!4v1704727927247!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
+
+    <script src="assets/js/script"></script>
+
 </body>
 </html>
